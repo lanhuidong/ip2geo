@@ -1,2 +1,10 @@
 ip2location
 ===========
+本项目是对网络上提供的根据IP地址查询地理位置服务的封装。由于网络上提供的查询服务会有调用频率等限制，本项目是为了缓解这些限制。比如当调用A公司的服务频率达到上限时，可以自动转而调用B公司的服务，或者轮流使用多家服务。
+<p>
+目前支持新浪、淘宝和百度三家的服务<br/>
+1.新浪：http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js&ip=61.135.152.194<br/>
+2.淘宝：http://ip.taobao.com/instructions.php<br/>
+3.百度：http://api.map.baidu.com/lbsapi/cloud/ip-location-api.htm<br/>
+<p>
+从测试来看新浪对国内国外IP的支持都比较好，淘宝对国外的IP返回的位置信息比较简洁，百度完全不支持国外IP，国内IP的位置信息不够详细
