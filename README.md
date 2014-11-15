@@ -1,2 +1,10 @@
 ip2location
 ===========
+本项目是利用一些大公司提供的api根据ip地址解析出地理位置
+-----------
+目前支持新浪、淘宝和百度的api。
+1.新浪：http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js&ip=61.135.152.194
+2.淘宝：http://ip.taobao.com/instructions.php
+3.百度：http://api.map.baidu.com/lbsapi/cloud/ip-location-api.htm
+-----------
+从测试来看新浪对国内国外IP的支持都比较好，淘宝对国外的IP返回的位置信息比较简洁，百度完全不支持国外IP，国内IP的位置信息不够详细
