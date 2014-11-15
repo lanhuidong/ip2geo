@@ -1,7 +1,6 @@
 package com.nexusy.ip.location.impl;
 
 import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
 import com.nexusy.ip.location.IP2Location;
 
 import java.io.BufferedReader;
@@ -42,10 +41,15 @@ public class IP2LocationBD implements IP2Location {
         Gson gson = new Gson();
         BDResponse response = gson.fromJson(result, BDResponse.class);
         String location = "";
-        if("0".equals(response.status)){
+        if ("0".equals(response.status)) {
             location = response.content.address;
         }
         return location;
+    }
+
+    @Override
+    public void addIP2Location(IP2Location ip2Location) {
+        throw new UnsupportedOperationException();
     }
 
     private class BDResponse {

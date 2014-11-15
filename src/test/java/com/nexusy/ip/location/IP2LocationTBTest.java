@@ -19,7 +19,7 @@ public class IP2LocationTBTest {
 
     @Test
     public void test() {
-        String result = ip2Location.ip2Location("42.121.57.127");
+        String result = ip2Location.ip2Location("23.59.157.15");
         System.out.println(result);
     }
 }

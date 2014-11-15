@@ -12,4 +12,6 @@ public interface IP2Location {
      * @return 地理位置
      */
     String ip2Location(String ip);
+
+    void addIP2Location(IP2Location ip2Location);
 }

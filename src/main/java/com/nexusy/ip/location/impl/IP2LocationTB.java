@@ -42,6 +42,11 @@ public class IP2LocationTB implements IP2Location {
         return location.toString();
     }
 
+    @Override
+    public void addIP2Location(IP2Location ip2Location) {
+        throw new UnsupportedOperationException();
+    }
+
     private class TBResponse {
         public String code;
         public Map<String, String> data;

@@ -36,6 +36,21 @@ public class IP2LocationXL implements IP2Location {
         Gson gson = new Gson();
         Map<String, String> map = gson.fromJson(json, new TypeToken<Map<String, String>>() {
         }.getType());
-        return map.get("country") + map.get("province") + map.get("city");
+        StringBuilder location = new StringBuilder();
+        if (map.get("country") != null) {
+            location.append(map.get("country"));
+        }
+        if (map.get("province") != null) {
+            location.append(map.get("province"));
+        }
+        if (map.get("city") != null) {
+            location.append(map.get("city"));
+        }
+        return location.toString();
+    }
+
+    @Override
+    public void addIP2Location(IP2Location ip2Location) {
+        throw new UnsupportedOperationException();
     }
 }
