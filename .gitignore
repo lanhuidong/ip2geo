@@ -5,4 +5,4 @@ pom.xml.versionsBackup
 pom.xml.next
 release.properties
 .idea/
-ip2location.iml
+*.iml
